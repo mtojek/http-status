@@ -17,6 +17,8 @@ If you agree that standard HTTP status texts do not conform to the nature of API
 ## Usage
 
 ~~~ go
+import "github.com/mtojek/http-status"
+
 var statusTextCode string
-statusTextCode = StatusTextCode(http.StatusInternalServerError) // statusTextCode = "INTERNAL_SERVER_ERROR"
+statusTextCode = status.TextCode(http.StatusInternalServerError) // statusTextCode = "INTERNAL_SERVER_ERROR"
 ~~~
